@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+
+    <title>Redux counter App</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <div>
+      <button class="ui button primary" onClick="store.dispatch(increment())">
+        Increment
+      </button>
+      <button class="ui button primary" onClick="store.dispatch(double())">
+        Double
+      </button>
+      <button class="ui button primary" onClick="store.dispatch(decrement())">
+        Decrement
+      </button>
+      <button class="ui button primary" onClick="store.dispatch(half())">
+        Half
+      </button>
+      Current count: <span id="value">0</span>
+    </div>
+    <h2>Win the mystery game</h2>
+    <p>Apparently infinity is a number, who would have known?</p>
+    <span id=""></span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
